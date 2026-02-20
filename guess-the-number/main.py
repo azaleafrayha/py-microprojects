@@ -1,6 +1,5 @@
 import random
 target = random.randint(1, 10) # putting it outside the loop so it only generates once per game (not every time the user wants to play again)
-print(target)
 
 print("Welcome to the Number Guessing Game!")
 print("I have selected a random number between 1 and 10. Can you guess it?")
@@ -25,7 +24,6 @@ while True:
     elif play_again.strip() == 'N' or play_again.strip() == 'n':
         target = random.randint(1, 10) # generate a new number for the new game
         print("Alright, a new number has been selected. Let's see if you can guess it!")
-        print(target) 
     else:
         print("Oh you wanna quit? Fine, thanks for playing! Goodbye!")
         break
